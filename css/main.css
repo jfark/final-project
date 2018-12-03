@@ -97,6 +97,76 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+	font-family: futura, sans-serif;
+	max-width: 100%;
+	max-height: 100%;
+	border: 10px solid red;
+	position: relative;
+}
+
+li {
+	list-style-type: none;
+}
+
+.a-list li {
+	float: left;
+}
+
+.b-list li {
+	float: right;
+}
+
+
+header {
+	padding: 0px 10px 100px 10px;
+	
+}
+
+.logo {
+	display: flex;
+	align-content: center;
+	margin: 0px 10px;
+	position: absolute;
+	top: 0;	
+	left: 33%;
+	
+}
+
+.logo img {
+	border: 1px solid red;
+	padding: 0px 20px;
+	max-height: 100px;
+}
+
+.logo p {
+	border: 1px solid red;
+	padding: 10px 20px;
+}
+
+
+main img {
+	max-width: 100%;
+}
+
+main {
+	clear: right;
+	display: flex;
+}
+
+.meet {
+	
+	flex: 1;
+}
+
+.visit {
+	flex: 1;
+}
+
+.shop {
+	flex: 1;
+}
+
 
 
 
