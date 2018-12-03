@@ -100,6 +100,7 @@ textarea {
 html {
 	height: 100%;
 	margin: 0;
+	
 }
 
 body {
@@ -112,13 +113,14 @@ body {
 	position: relative;
 	background-image: url(../images/meet.jpg);
 	background-repeat: no-repeat;
+	
 }
 
 .container {
 	height: 100%;
 	box-sizing: border-box;
-	border: 10px solid red;
-	overflow: scroll;
+	border: 10px solid #ef473b;
+	overflow: auto;
 }
 
 a {
@@ -127,33 +129,41 @@ a {
 }
 
 header {
-	padding: 0px 0px 100px 0px;
-	display: flex;
+	
 	position: absolute;
 	top: 0px;
 	text-transform: uppercase;
 }
 
+
 .logo {
 	display: flex;
-	align-content: center;
-	margin: 0px 5px;
-	z-index: -99;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	top: 0;
+	padding: 10px 0px;
 }
 
-.logo img {
-	flex: 1;
-	padding: 0px 15px;
-	margin: 0px;
-	max-height: 100px;
+.logo-img {
+	flex: .5;
 	background: white;
+	text-align: center;
+	align-content: center;
+	
 }
 
-.logo p {
-	flex: 1;
-	background: red;
-	padding: 10px 10px;
+.logo-img img {
+	max-width: 140px;
+	padding: 10px 0px;
+}
+
+.logo-phrase {
+	flex: .5;
+	background: #ec4941;
 	text-align: center;
+	justify-content: center;
+	align-content: center;
 }
 
 .logo a {
@@ -167,9 +177,13 @@ header {
 	margin: 40px 0px 0px 15px;
 }
 
-.b-list {
+.right {
 	padding: 0;
-	padding: 40px 5px 0px 0px;
+	margin: 40px 15px 0px 0px;
+	
+	position: absolute;
+	right: 0;
+	
 }
 
 li {
@@ -185,7 +199,6 @@ li {
 
 .b-list li {
 	float: left;
-	
 }
 
 main img {
@@ -194,8 +207,8 @@ main img {
 
 main {
 	display: flex;
-	padding: 100px 0px 0px 0px;
 	margin: 0;
+	z-index: -10;
 }
 
 main p {
@@ -206,22 +219,33 @@ main a {
 	font-family: futura, sans-serif;
 }
 
+
+.meet, .visit, .shop {
+	padding: 150px 30px 0px 30px;
+}
+
 .meet {
 	flex: 1;
-	background: red;
-	opacity: 0.5;
+	background-color: rgba(0, 174, 239, 0.6);
+	
+	margin: 0px 60px 0px 0px;
 }
 
 .visit {
 	flex: 1;
+	margin: 0px 30px 0px 30px;
+	background-color: rgba(239, 71, 59, 0.6)
+	
 }
 
 .shop {
 	flex: 1;
+	margin: 0px 0px 0px 60px;
+	background-color: rgba(42, 169, 81, 0.6);
 }
 
 section {
-	padding: 0px 20px;
+	
 	text-align: center;
 	
 }
