@@ -99,14 +99,18 @@ textarea {
 
 body {
 	font-family: futura, sans-serif;
+	color: white;
 	max-width: 100%;
 	max-height: 100%;
 	border: 10px solid red;
 	position: relative;
+	background-image: url(../images/meet.jpg);
+	background-repeat: no-repeat;
 }
 
 a {
 	text-decoration: none;
+	color: white;
 }
 
 header {
@@ -114,6 +118,7 @@ header {
 	display: flex;
 	position: absolute;
 	top: 0px;
+	text-transform: uppercase;
 }
 
 .logo {
@@ -127,12 +132,14 @@ header {
 	padding: 0px 15px;
 	margin: 0px;
 	max-height: 100px;
+	background: white;
 }
 
 .logo p {
 	flex: 1;
 	background: red;
 	padding: 10px 10px;
+	text-align: center;
 }
 
 .logo a {
@@ -143,20 +150,18 @@ header {
 
 .a-list {
 	padding: 0;
-	margin: 20px 0px 0px 5px;
+	margin: 40px 0px 0px 15px;
 }
 
 .b-list {
 	padding: 0;
-	margin: 20px 5px 0px 0px;
-	justify-content: flex-end;
+	margin: 40px 5px 0px 0px;
 }
 
 li {
 	list-style-type: none;
 	padding: 0px 12px;
 	font-size: 13px;
-	text-transform: uppercase;
 	font-weight: bold;
 }
 
@@ -178,9 +183,18 @@ main {
 	padding: 100px 0px 0px 0px;
 }
 
+main p {
+	font-family: serif;
+}
+
+main a {
+	font-family: futura, sans-serif;
+}
+
 .meet {
-	
 	flex: 1;
+	background: red;
+	opacity: 0.5;
 }
 
 .visit {
