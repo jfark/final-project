@@ -129,12 +129,14 @@ a {
 }
 
 header {
-	
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	text-transform: uppercase;
 }
 
+.header-flex {
+	diplay: flex;
+}
 
 .logo {
 	display: flex;
@@ -175,14 +177,12 @@ header {
 .a-list {
 	padding: 0;
 	margin: 40px 0px 0px 15px;
+	
 }
 
-.right {
+.b-list {
 	padding: 0;
 	margin: 40px 15px 0px 0px;
-	
-	position: absolute;
-	right: 0;
 	
 }
 
@@ -199,6 +199,16 @@ li {
 
 .b-list li {
 	float: left;
+}
+
+.left {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.right {
+	flex: 1;
+	justify-content: flex-end;
 }
 
 main img {
