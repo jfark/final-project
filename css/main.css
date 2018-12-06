@@ -217,13 +217,11 @@ li {
 }
 
 .left {
-	flex: 1;
-	justify-content: flex-end;
+	
 }
 
 .right {
-	flex: 1;
-	justify-content: flex-end;
+	float: right;
 }
 
 main img {
