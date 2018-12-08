@@ -100,7 +100,6 @@ textarea {
 html {
 	height: 100%;
 	margin: 0;
-	
 }
 
 body {
@@ -142,11 +141,10 @@ a {
 header {
 	position: fixed;
 	top: 0px;
+	padding: 0;
+	margin: 0;
 	text-transform: uppercase;
-}
-
-.header-flex {
-	
+	z-index: 200;
 }
 
 .logo {
@@ -185,32 +183,30 @@ header {
 	font-size: 1.2em;
 }
 
-.a-list {
-	padding: 0;
-	margin: 40px 0px 0px 15px;
-}
-
-.b-list {
-	padding: 0;
-	margin: 40px 15px 0px 0px;
-}
-
 li {
 	list-style-type: none;
 	padding: 0px 12px;
 	font-size: 13px;
 	font-weight: bold;
-}
-
-.a-list li {
 	float: left;
+	letter-spacing: 1.25px;
 }
 
-.b-list li {
-	float: left;
+.left {
+	position: fixed;
+	margin: 30px 0px 0px -20px;
 }
 
+.right {
+	position: fixed;
+	right: 0;
+	margin: 30px 35px 0px 0px;
+}
 
+i {
+	font-size: 16px;
+	padding: 0px 1.5px;
+}
 
 main img {
 	max-width: 100%;
@@ -237,7 +233,7 @@ main hr {
 
 main p {
 	font-family: DTL Elzevir;
-	    src: url("fonts/DTL Elzevir ST Regular.otf") format("opentype");
+    src: url("fonts/DTL Elzevir ST Regular.otf") format("opentype");
 }
 
 main a, h2 {
@@ -245,9 +241,8 @@ main a, h2 {
 	font-family: futura-pt, sans-serif;
 }
 
-
 .meet, .visit, .shop {
-	padding: 150px 50px 0px 50px;
+	padding: 150px 50px 20px 50px;
     overflow: auto;
 	height: auto;
 	-webkit-overflow-scrolling: touch;
@@ -265,7 +260,6 @@ main a, h2 {
 .meet {
 	flex: 1;
 	margin: 0px 60px 0px 0px;
-	
 	position: relative;
 	font-size: .75em;
 	line-height: 1.5em;
@@ -284,15 +278,13 @@ main a, h2 {
 
 .visit {
 	flex: 1;
-	margin: 0px 30px 0px 30px;
-	
+	margin: 0px 30px 10px 30px;
 }
 
 .visit:hover {
 	font-size: 20px;
 	background-color: rgba(239, 71, 59, 0.6);
 	transition: all .2s ease;
-	
 }
 
 .shop {
