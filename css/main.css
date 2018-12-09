@@ -133,6 +133,10 @@ body {
 	border: 10px solid #1dafec;
 }
 
+.container:hover .logo-phrase {
+	background: #1dafec;
+}
+
 a {
 	text-decoration: none;
 	color: white;
@@ -227,22 +231,20 @@ main {
 }
 
 main hr {
-	width: 10%;
-	height: 5px;
-	color: white;
-	text-align: center;
-	margin: 0;
-	padding: 0;
+	width: 17%;
+	border-color: white;
+	border-size: 5px;
+	margin: auto;
 }
 
-main p {
+.shop p {
 	font-family: DTL Elzevir;
     src: url("fonts/DTL Elzevir ST Regular.otf") format("opentype");
+	text-transform: none;
 }
 
-main a, h2 {
+main {
 	text-transform: uppercase;
-	font-family: futura-pt, sans-serif;
 }
 
 .meet, .visit, .shop {
@@ -250,7 +252,10 @@ main a, h2 {
     overflow: auto;
 	height: auto;
 	-webkit-overflow-scrolling: touch;
-	    -ms-overflow-style: none;
+	-ms-overflow-style: none;
+	font-size: .75em;
+	letter-spacing: 1.5px;
+	line-height: 1em;
 }
 
 .meet::-webkit-scrollbar,.visit::-webkit-scrollbar,.shop::-webkit-scrollbar {
@@ -258,7 +263,7 @@ main a, h2 {
 }
 
 .after {
-	display: none;
+	display: nonne;
 }
 
 .meet {
@@ -275,14 +280,30 @@ main a, h2 {
 	transition: all .2s ease;
 }
 
-.meet .theft, .stories {
-	text-transform: uppercase;
-	font-family: futura-pt, sans-serif;
+.meet:hover .after {
+	display: inline;
+}
+
+.meet:hover hr {
+	display:  none;
 }
 
 .visit {
 	flex: 1;
 	margin: 0px 30px 10px 30px;
+	font-family: futura-pt, sans-serif;
+	font-weight: bold;
+}
+
+.visit a {
+	text-decoration: underline;
+}
+
+main .border {
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 10px 20px;
+	line-height: 60px; 
 }
 
 .visit:hover {
