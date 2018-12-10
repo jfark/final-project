@@ -235,9 +235,13 @@ main .border {
 	line-height: 60px; 
 }
 
+@font-face {
+	font-family: DTL Elzevir;
+    src: url("../fonts/DTL Elzevir ST Regular.otf") format("opentype");
+}
+
 .elzevir {
 	font-family: DTL Elzevir;
-    src: url("fonts/DTL Elzevir ST Regular.otf") format("opentype");
 	text-transform: none;
 	font-weight: normal;
 	font-size: 1.5em;
