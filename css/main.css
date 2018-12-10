@@ -130,11 +130,11 @@ body {
 	background-image: );
 	background-repeat: no-repeat;
 	background-position: center;
-	border: 10px solid #1dafec;
+	border: 10px solid #00AEEF;
 }
 
 .container:hover .logo-phrase {
-	background: #1dafec;
+	background: #00AEEF;
 }
 
 a {
@@ -188,7 +188,7 @@ header {
 	color: white;
 	margin: 0;
 	padding: 0;
-	font-size: 1.2em;
+	font-size: 1.15em;
 }
 
 li {
@@ -228,6 +228,7 @@ main {
 	height: 100vh;
 	backface-visibility: hidden;
 	will-change: overflow;
+	text-transform: uppercase;
 }
 
 main hr {
@@ -237,55 +238,64 @@ main hr {
 	margin: auto;
 }
 
-.shop p {
-	font-family: DTL Elzevir;
-    src: url("fonts/DTL Elzevir ST Regular.otf") format("opentype");
-	text-transform: none;
-}
-
-main {
-	text-transform: uppercase;
-}
-
 .meet, .visit, .shop {
-	padding: 150px 50px 20px 50px;
+	padding: 150px 40px 20px 40px;
     overflow: auto;
 	height: auto;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: none;
 	font-size: .75em;
 	letter-spacing: 1.5px;
-	line-height: 1em;
+	line-height: 1.5em;
+	font-weight: bold;
 }
 
 .meet::-webkit-scrollbar,.visit::-webkit-scrollbar,.shop::-webkit-scrollbar {
     display: none;
 }
 
-.after {
-	display: nonne;
+.meet-after {
+	display: none;
 }
 
 .meet {
 	flex: 1;
 	margin: 0px 60px 0px 0px;
 	position: relative;
-	font-size: .75em;
-	line-height: 1.5em;
+	
+}
+
+.elzevir {
+	font-family: DTL Elzevir;
+    src: url("fonts/DTL Elzevir ST Regular.otf") format("opentype");
+	text-transform: none;
+	font-weight: normal;
+	font-size: 1.5em;
+	line-height: 1.4em;
+	letter-spacing: .05em;
+}
+
+.futura-link {
+	text-decoration: underline;
 }
 
 .meet:hover {
-	font-size: 20px;
-	background-color: rgba(0, 174, 239, 0.6);
 	transition: all .2s ease;
+	background-color: rgba(0, 114, 225, 0.6);
+	
 }
 
-.meet:hover .after {
+.meet:hover h2, .visit:hover h2, .shop:hover h2 {
+	font-size: 30px;
+	line-height: 1em;
+}
+
+.meet:hover .meet-after {
 	display: inline;
 }
 
 .meet:hover hr {
-	display:  none;
+	display: none;
 }
 
 .visit {
@@ -293,6 +303,11 @@ main {
 	margin: 0px 30px 10px 30px;
 	font-family: futura-pt, sans-serif;
 	font-weight: bold;
+	position: relative;
+}
+
+.visit:hover .after {
+	display: inline;
 }
 
 .visit a {
@@ -306,21 +321,40 @@ main .border {
 	line-height: 60px; 
 }
 
+main .border:hover {
+	background: white;
+	color: #1dafec;
+}
+
+
+
 .visit:hover {
 	font-size: 20px;
-	background-color: rgba(239, 71, 59, 0.6);
+	background-color: rgba(230, 36, 28, 0.6);
 	transition: all .2s ease;
 }
 
 .shop {
 	flex: 1;
 	margin: 0px 0px 0px 60px;
+	position: relative;
+}
+
+.shop-after {
+	display: none;
 }
 
 .shop:hover {
-	font-size: 20px;
-	background-color: rgba(42, 169, 81, 0.6);
+	background-color: rgba(10, 122, 28, 0.6);
 	transition: all .2s ease;
+}
+
+.shop:hover hr {
+	display: none;
+}
+
+.shop:hover .shop-after {
+	display: inline;
 }
 
 
