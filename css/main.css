@@ -118,23 +118,24 @@ body {
 .container {
 	height: 100%;
 	box-sizing: border-box;
-	border: 10px solid #ef473b;
+	border: 10px solid #00AEEF;
 	overflow: hidden;
 	background-image: url(../images/meet.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 100%;
 	position: relative;
 }
 
 .container:hover {
-	background-image: );
+	background-image: url(../images/visit.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	border: 10px solid #00AEEF;
+	border: 10px solid #EF473B;
 }
 
 .container:hover .logo-phrase {
-	background: #00AEEF;
+	background: #EF473B;
 }
 
 a {
@@ -178,7 +179,7 @@ header {
 
 .logo-phrase {
 	flex: .5;
-	background: #ec4941;
+	background: #00AEEF;
 	text-align: center;
 	justify-content: center;
 	align-content: center;
@@ -231,6 +232,27 @@ main {
 	text-transform: uppercase;
 }
 
+main .border {
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 10px 20px;
+	line-height: 60px; 
+}
+
+.elzevir {
+	font-family: DTL Elzevir;
+    src: url("fonts/DTL Elzevir ST Regular.otf") format("opentype");
+	text-transform: none;
+	font-weight: normal;
+	font-size: 1.5em;
+	line-height: 1.4em;
+	letter-spacing: .05em;
+}
+
+.futura-link {
+	text-decoration: underline;
+}
+
 main hr {
 	width: 17%;
 	border-color: white;
@@ -239,7 +261,7 @@ main hr {
 }
 
 .meet, .visit, .shop {
-	padding: 150px 40px 20px 40px;
+	padding: 140px 40px 20px 40px;
     overflow: auto;
 	height: auto;
 	-webkit-overflow-scrolling: touch;
@@ -262,31 +284,15 @@ main hr {
 	flex: 1;
 	margin: 0px 60px 0px 0px;
 	position: relative;
-	
-}
-
-.elzevir {
-	font-family: DTL Elzevir;
-    src: url("fonts/DTL Elzevir ST Regular.otf") format("opentype");
-	text-transform: none;
-	font-weight: normal;
-	font-size: 1.5em;
-	line-height: 1.4em;
-	letter-spacing: .05em;
-}
-
-.futura-link {
-	text-decoration: underline;
 }
 
 .meet:hover {
 	transition: all .2s ease;
-	background-color: rgba(0, 114, 225, 0.6);
-	
+	background-color: rgba(0, 114, 225, 0.7);
 }
 
 .meet:hover h2, .visit:hover h2, .shop:hover h2 {
-	font-size: 30px;
+	font-size: 2.5em;
 	line-height: 1em;
 }
 
@@ -298,40 +304,84 @@ main hr {
 	display: none;
 }
 
+.meet .border:hover {
+	background: white;
+	color: #1dafec;
+}
+
 .visit {
 	flex: 1;
 	margin: 0px 30px 10px 30px;
 	font-family: futura-pt, sans-serif;
 	font-weight: bold;
 	position: relative;
+	padding-bottom: 150px;
 }
 
 .visit:hover .after {
 	display: inline;
 }
 
-.visit a {
-	text-decoration: underline;
+.visit h3 {
+	overflow: hidden;
+	text-align: center;
+	margin: 5px;
+	font-size: 1em;
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+	font-weight: bold;
 }
 
-main .border {
-	text-decoration: none;
-	border: 2px solid white;
-	padding: 10px 20px;
-	line-height: 60px; 
+.visit h3:before, .visit h3:after {
+	background-color: #fff;
+	content: "";
+	display: inline-block;
+	height: 2px;
+	position: relative;
+	vertical-align: middle;
+	width: 30%;
 }
 
-main .border:hover {
-	background: white;
-	color: #1dafec;
+.visit h3 {
+	padding-top: 30px;
 }
 
+.visit .first {
+	padding-top: 65px;
+}
 
+.visit h4 {
+	font-size: 2.5em;
+	line-height: 1em;
+	margin: 30px 0px 10px 0px;
+}
+
+.visit h5 {
+	font-size: 1.25em;
+	margin: 0px;
+}
+
+.visit-after {
+	display: none;
+}
 
 .visit:hover {
-	font-size: 20px;
-	background-color: rgba(230, 36, 28, 0.6);
+	background-color: rgba(215, 26, 18, 0.7);
 	transition: all .2s ease;
+}
+
+
+.visit:hover .visit-after {
+	display: inline;
+}
+
+.visit:hover hr {
+	display: none;
+}
+
+.visit .border:hover {
+	background: white;
+	color: #EF473B;
 }
 
 .shop {
@@ -345,7 +395,7 @@ main .border:hover {
 }
 
 .shop:hover {
-	background-color: rgba(10, 122, 28, 0.6);
+	background-color: rgba(10, 122, 28, 0.7);
 	transition: all .2s ease;
 }
 
@@ -357,11 +407,13 @@ main .border:hover {
 	display: inline;
 }
 
+.shop .border:hover {
+	background: white;
+	color: #20AA4D;
+}
 
 section {
-	
 	text-align: center;
-	
 }
 
 
